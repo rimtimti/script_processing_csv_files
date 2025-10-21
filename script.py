@@ -1,7 +1,7 @@
 import argparse
 
 
-def my_parser():
+def my_script(*args):
     """
     Скрипт с настройками
     """
@@ -28,8 +28,7 @@ def my_parser():
         type=str,
         nargs=1,
         help="Введите название отчета",
+        default="",
     )
 
-    args = parser.parse_args()
-
-    return args.files, args.report, args.output
+    return parser.parse_args(*args)
