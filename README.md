@@ -42,11 +42,11 @@ pip install -r requirements.txt
 
 Старт скрипта:
 ```
-python maшт.py -f products1.csv products2.csv -r average_rating -o result
+python main.py -f products1.csv products2.csv -r average_rating -o result
 или
-python maшт.py --files products1.csv products2.csv --report average_rating --output result
+python main.py --files products1.csv products2.csv --report average_rating --output result
 или
-python maшт.py -f products1.csv products2.csv -r average_rating
+python main.py -f products1.csv products2.csv -r average_rating
 где
 products1.csv products2.csv - названия файлов (должны быть в текущей директории) или полные пути к файлам (обязательно)
 average_rating - команда для отчета (обязательно)
