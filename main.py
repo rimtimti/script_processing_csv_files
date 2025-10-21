@@ -1,4 +1,5 @@
 from functions import average_rating
+# from functions import average_price
 from script import my_script
 
 
@@ -12,9 +13,11 @@ def run(*arsg):
     match parser.report[0]:
         case "average_rating":
             average_rating(parser.files, output)
-        # Сюда можно добавлять новые команды, нужно только написать функцию и обернуть в декоратор
-        # case "price_rating":
-        #     price_rating(input_files, output)
+        # Сюда можно добавлять новые команды, нужно только написать функцию и обернуть в декоратор,
+        # например я добавил новую функцию (закомментировано)
+
+        # case "average_price":
+        #     average_price(parser.files, output)
 
 
 if __name__ == "__main__":
